@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Quiz Interativo</h1>
+        <div id="div1">
+            <div id="placar">
+                <p id="acertos">Acertos:</p>
+                <p id="erros">Erros:</p>
+            </div>
+            <h2 id="resultado"></h2>
+        </div>
+        <p id="questoes"></p>
+        <p id="pergunta"></p>
+        <section>
+            <div>
+                <div class="esco" onclick="escolha('1')" onmouseenter="entrou('1')" onmouseleave="saiu('1')" id="1"></div>
+                <div class="esco" onclick="escolha('2')" onmouseenter="entrou('2')" onmouseleave="saiu('2')" id="2"></div>
+            </div>
+            <div>
+                <div class="esco" onclick="escolha('3')" onmouseenter="entrou('3')" onmouseleave="saiu('3')" id="3"></div>
+                <div class="esco" onclick="escolha('4')" onmouseenter="entrou('4')" onmouseleave="saiu('4')" id="4"></div>
+            </div>
+        </section>
+        <footer id="botoes">
+            <button id="enviar" disabled="true" type="submit" onclick="enviar()">Responder</button>
+            <button id="proxima" disabled="true" type="submit" onclick="montar()">Próxima</button>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

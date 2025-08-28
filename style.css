@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-family: 'KGP';
+    font-weight: bolder;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+@font-face {
+    font-family: 'Maria';
+    src: url('Maria_lucia.ttf');
+    font-family: 'KGP';
+    src: url('KGPerfectPenmanship.otf');
+}
+
+h1{
+    margin-top: 15px;
+    font-family: 'KGP';
+    font-size: 48px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1100px;
+    height: 600px;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: url(quadro-branco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.esco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+}
+
+p, h1, button{
+    margin-left: 25px;
+}
+
+footer{
+    display: flex;
+}
+
+#pergunta{
+    font-size: 36px;
+}
+
+#div1{
+    display: flex;
+    width: 900px;
+    height: 100px;
+}
+
+#placar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+#questoes{
+    width: fit-content;
+    border-bottom: solid 3px black;
+}
+
+#resultado{
+    font-size: 48px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    body{
+        align-items: baseline;
+    }
+    main{
+        width: 100%;
+        background-image: url("quadro-branco2.jpg");
+        background-size: cover;
+    }
+    section{
+        flex-direction: column;
+    }
+    div{
+        margin-bottom: 10px;
+    }
+    #div1{
+        justify-content: space-between;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    #pergunta{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    #resultado{
+        font-size: 36px;
+        width: 40%;
+    }
+    #placar{
+        width: 50%;
+    }
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
