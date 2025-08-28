@@ -104,10 +104,11 @@ footer{
 @media (max-width: 700px) {
     body{
         align-items: baseline;
+        background-image: url("quadro-branco2.jpg");
     }
     main{
         width: 100%;
-        background-image: url("quadro-branco2.jpg");
+        background-image: none;
         background-size: cover;
     }
     section{
